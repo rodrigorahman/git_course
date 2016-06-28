@@ -109,6 +109,4 @@ git push origin :design
    
    
 **Verificando se existem branchs novas no repositorio remoto: **
-```
->Realizando o comando git fetch origin, podemos verificar todas as atualizações que foram realizadas no repositório referente ao origin.
-```
+ > Realizando o comando git fetch origin, podemos verificar todas as atualizações que foram realizadas no repositório referente ao origin.
