@@ -28,13 +28,13 @@ Detalhando alterações de um arquivo.
   
   
 Listando arquivos controlados pelo git:
-    - git ls-files
+  - git ls-files
     
 Para alterar o editor padrão de mensagens basta criar uma variavel de ambiente EDITOR com o comando que ele pode abrir 
 
 
 Para ver os logs e o que foi alterado basta executar:
-    - git whatchanged
+   - git whatchanged
     
 Adicionando repositorio remoto:
-    - git remote add <apelido do repositorio remoto: normalmente 'origin'> <url do projeto>
+   - git remote add <apelido do repositorio remoto: normalmente 'origin'> <url do projeto>
