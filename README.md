@@ -6,12 +6,18 @@ Opcionalmente, é possível configurar o Terminal para completar os comandos do 
 
 Adicione as seguintes linhas ao fim do arquivo:
 
+### Arquivos de configuração para o GIT
+parse_git_branch() {
+
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+
+}
+
+export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
 if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
     . /usr/local/git/contrib/completion/git-completion.bash
 fi
-GIT_PS1_SHOWDIRTYSTATE=true
 
-PS1='\u@\h:\w $(__git_ps1 "(%s)")\$ '
 
 
 ### Comandos Basicos
