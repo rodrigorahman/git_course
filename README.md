@@ -36,7 +36,9 @@ Host github.com
 ## Comandos Basicos
 
 Criando tag:
-  - git tag <nome da tag>
+```
+- git tag <nome da tag>
+```
 
 Baixando tag
   - git checkout <nome da tag>
