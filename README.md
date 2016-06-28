@@ -41,7 +41,8 @@ Adicionando repositorio remoto:
    
    
    
-### Branch
+### Branchs
+
 Para enviar um branch para o repositorio e dizer que ela é igual a nossa local devemos utilizar o comando
    - git push -u origin design
    
