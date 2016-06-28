@@ -1,4 +1,4 @@
-Git Course:
+## Resumo de tags do GIT
 
 Adicionando auto complete no terminal:
 
