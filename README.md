@@ -18,6 +18,19 @@ if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
     . /usr/local/git/contrib/completion/git-completion.bash
 fi
 
+## Configure multiple SSH identities for GitBash, Mac OSX, & Linux
+Gerando chave:
+   - ssh-keygen -f ~/.ssh/personalid -C "personalid" 
+   
+Crie um arquivo: 
+   - ~/.ssh/config file
+   
+Dentro dele set o char para cada dominio ex:
+
+Host github.com
+ HostName github.com
+ PreferredAuthentications publickey
+ IdentityFile ~/.ssh/rodrigorahman
 
 
 ### Comandos Basicos
