@@ -6,7 +6,7 @@ Opcionalmente, é possível configurar o Terminal para completar os comandos do 
 
 Adicione as seguintes linhas ao fim do arquivo:
 
-### Arquivos de configuração para o GIT
+## Arquivos de configuração para o GIT
 parse_git_branch() {
 
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -33,7 +33,7 @@ Host github.com
  IdentityFile ~/.ssh/rodrigorahman
 
 
-### Comandos Basicos
+## Comandos Basicos
 
 Criando tag:
   - git tag <nome da tag>
