@@ -100,7 +100,7 @@ git branch -d <Nome da branch>
 git branch -a
 ```
    
-Realizando o comando **git checkout -t origin/design **, uma nova branch local chamada design é criada, muda-se para essa branch, copiamos todo o conteúdo da branch remota design do repositório referente ao origin e trackeamos as duas branches.
+Realizando o comando **git checkout -t origin/design**, uma nova branch local chamada design é criada, muda-se para essa branch, copiamos todo o conteúdo da branch remota design do repositório referente ao origin e trackeamos as duas branches.
 
 Removendo uma branch remota design:
 ```
@@ -108,5 +108,5 @@ git push origin :design
 ```
    
    
-**Verificando se existem branchs novas no repositorio remoto: **
+**Verificando se existem branchs novas no repositorio remoto:**
 Realizando o comando git fetch origin, podemos verificar todas as atualizações que foram realizadas no repositório referente ao origin.
