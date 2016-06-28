@@ -102,7 +102,7 @@ git branch -a
    
 Realizando o comando **git checkout -t origin/design**, uma nova branch local chamada design é criada, muda-se para essa branch, copiamos todo o conteúdo da branch remota design do repositório referente ao origin e trackeamos as duas branches.
 
-Removendo uma branch remota design:
+**Removendo uma branch remota design:**
 ```
 git push origin :design
 ```
