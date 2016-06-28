@@ -38,3 +38,5 @@ Para ver os logs e o que foi alterado basta executar:
     
 Adicionando repositorio remoto:
    - git remote add <apelido do repositorio remoto: normalmente 'origin'> <url do projeto>
+   
+   
