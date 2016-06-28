@@ -14,6 +14,8 @@ GIT_PS1_SHOWDIRTYSTATE=true
 PS1='\u@\h:\w $(__git_ps1 "(%s)")\$ '
 
 
+### Comandos Basicos
+
 Criando tag:
   - git tag <nome da tag>
 
