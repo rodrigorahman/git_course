@@ -27,11 +27,11 @@ Abra o arquivo ~/.gitconfig:
 
 ## Configure multiple SSH identities for GitBash, Mac OSX, & Linux
 **Gerando chave:**
-   - ssh-keygen -f ~/.ssh/personalid -C "personalid" 
-   
+   - ssh-keygen -f ~/.ssh/personalid -C "personalid"
+
 **Crie um arquivo:**
    - ~/.ssh/config file
-   
+
 **Dentro dele set o char para cada dominio ex:**
 
 Host github.com
@@ -63,13 +63,13 @@ git diff v0.1 v0.2
 ```
 git blame README.md
 ```
-  
-  
+
+
 **Listando arquivos controlados pelo git:**
 ```
 git ls-files
 ```
-    
+
 **Para alterar o editor padrão de mensagens basta criar uma variavel de ambiente EDITOR com o comando que ele pode abrir **
 
 
@@ -82,8 +82,8 @@ git whatchanged
 ```
 git remote add <apelido do repositorio remoto: normalmente 'origin'> <url do projeto>
 ```   
-   
-   
+
+
 ## Branchs
 
 **Para enviar um branch para o repositorio e dizer que ela é igual a nossa local devemos utilizar o comando**
@@ -103,20 +103,20 @@ git branch -t      design            origin/design
 ```
 git branch -d <Nome da branch>
 ```
-   
+
 **Listar todas as branchs locais e remotas:**
 ```
 git branch -a
 ```
-   
+
 Realizando o comando **git checkout -t origin/design**, uma nova branch local chamada design é criada, muda-se para essa branch, copiamos todo o conteúdo da branch remota design do repositório referente ao origin e trackeamos as duas branches.
 
 **Removendo uma branch remota design:**
 ```
 git push origin :design
 ```
-   
-   
+
+
 **Verificando se existem branchs novas no repositorio remoto:**
 
 Realizando o comando git fetch origin, podemos verificar todas as atualizações que foram realizadas no repositório referente ao origin.
@@ -127,7 +127,7 @@ Realizando o comando git fetch origin, podemos verificar todas as atualizações
 git rebase master desenvolvimento.
 ````
 
-O comando está pegando todos os comits da branch master e adicionando na branch desenvolvimento um a um 
+O comando está pegando todos os comits da branch master e adicionando na branch desenvolvimento um a um
 
 **Em caso de querer abortar o rebase utilizar:**
 ```
@@ -152,7 +152,7 @@ Com esse comando o git irá buscar todos os comites de desenvolvimento e jogar d
 ## Revert
 Para reverter a alteração de um arquivo utilize o checkout ex:
 ```
-git checkout <nome do arquivo> 
+git checkout <nome do arquivo>
 ```
 Só funciona quando o arquivo ainda está como untracked (não adicionado -> não foi feito o **git add**)
 
@@ -195,7 +195,7 @@ Após feito quero retomar meu código guardado para visualizar um stash utilizo:
 git stash list
 ```
 
-Para recuperar um stash basta 
+Para recuperar um stash basta
 ```
 git stash pop
 ```
@@ -224,7 +224,7 @@ git bisect good 02bfc44
 Podemos testar agora se, nesse ponto, nossa funcionalidade estava OK. Caso não esteja, precisamos marcar o commit atual como "ruim":
 ```
 git bisect bad
-``` 
+```
 
 
 ## Aliases
@@ -286,3 +286,16 @@ Comando serve para enviar um commit especifico para um branch
 git cherry-pick 19f0bb7d8b4be8ecd687b48fca301b71b95eab41
 ```
 
+## Remover do controle de versão arquivos já comitados ##
+
+
+Caso não tenha feito o commit ainda, utilize:
+```
+git reset <arquivo-ou-diretório>
+```
+
+Caso já tenha realizado um commit, utilize:
+```
+git rm --cached <arquivo>
+git rm -r --cached <diretório>
+```
