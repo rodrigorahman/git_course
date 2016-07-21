@@ -299,3 +299,16 @@ Caso já tenha realizado um commit, utilize:
 git rm --cached <arquivo>
 git rm -r --cached <diretório>
 ```
+
+## Recuperando dados do origin ##
+
+***Recuperando a URL***
+```
+git config --get remote.origin.url
+```
+
+***Recuperando todos os dados do repositorio remoto***
+
+```
+git remote show origin
+```
