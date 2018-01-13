@@ -312,3 +312,9 @@ git config --get remote.origin.url
 ```
 git remote show origin
 ```
+
+***Recuperando o hash e recuperando somente 7 caracteres ***
+```
+git rev-parse --short=7 HEAD
+```
+
